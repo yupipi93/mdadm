@@ -31,3 +31,6 @@ sudo mdadm --grow /dev/md0 -z max
 
 # Resize
 sudo resize2fs /dev/md0
+
+# Check Status
+sudo mdadm --detail /dev/md0
