@@ -36,3 +36,5 @@ sudo resize2fs /dev/md0
 
 ## Check Status
 sudo mdadm --detail /dev/md0
+
+## Init checker (Bussy disk for a aboud 2 hours)
