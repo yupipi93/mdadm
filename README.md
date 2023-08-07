@@ -38,6 +38,9 @@ sudo resize2fs /dev/md0
 ## Init check status process(Bussy disk for a aboud 3 hours)
 sudo /usr/share/mdadm/checkarray -a /dev/md0
 
+## Stop check status
+echo idle | sudo tee /sys/block/md0/md/sync_action > /dev/null
+
 ## Check status
 sudo mdadm --detail /dev/md0
 sudo watch -n1 sudo cat /proc/mdstat (check continuously)
