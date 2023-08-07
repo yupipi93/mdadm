@@ -21,6 +21,7 @@ sudo watch -n1 sudo cat /proc/mdstat
 
 ## Get all raids info (root user)
 sudo mdadm --detail --scan --verbose >> /etc/mdadm.conf
+sudo mdadm --examine /dev/sdXY
 
 ## Add disk
 sudo mdadm --add /dev/md0 /dev/sde1
