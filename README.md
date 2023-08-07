@@ -34,7 +34,7 @@ sudo mdadm --grow /dev/md0 -z max
 ## Resize
 sudo resize2fs /dev/md0
 
-## Init check status process(Bussy disk for a aboud 2 hours)
+## Init check status process(Bussy disk for a aboud 3 hours)
 sudo /usr/share/mdadm/checkarray -a /dev/md0
 
 ## Check status
