@@ -9,6 +9,8 @@ sudo apt install mdadm
 sudo cat /proc/partitions
 ```
 ## Format to Linux Raid
+Format all disk except OS disk to Linux raid.
+1. format and change format to raid.
 ```
 sudo fdisk /dev/sdX
 ```
