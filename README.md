@@ -41,9 +41,9 @@ sudo mdadm --examine /dev/sdXY
 sudo mdadm --add /dev/md0 /dev/sde1
 ```
 
-## Check raid capacity
+## Check raid info
 ```
-sudo mdadm -D /dev/md0 | grep -e "Array Size" -e "Dev Size"
+sudo mdadm -D /dev/md0
 ```
 
 ## Resize to max
