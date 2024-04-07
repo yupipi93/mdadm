@@ -61,6 +61,12 @@ sudo resize2fs /dev/md0
 sudo /usr/share/mdadm/checkarray -a /dev/md0
 ```
 
+## Check status
+```
+sudo mdadm --detail /dev/md0
+sudo watch -n1 sudo cat /proc/mdstat (check continuously)
+```
+
 ## Stop check status
 ```
 echo idle | sudo tee /sys/block/md0/md/sync_action > /dev/null
@@ -110,6 +116,3 @@ Consistency Policy : bitmap
 
        7       8       65        -      spare   /dev/sde1
 
-## Check status
-sudo mdadm --detail /dev/md0
-sudo watch -n1 sudo cat /proc/mdstat (check continuously)
