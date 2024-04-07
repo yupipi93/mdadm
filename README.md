@@ -64,7 +64,7 @@ sudo /usr/share/mdadm/checkarray -a /dev/md0
 ## Check status
 ```
 sudo mdadm --detail /dev/md0
-sudo watch -n1 sudo cat /proc/mdstat (check continuously)
+sudo watch -n1 sudo cat /proc/mdstat
 ```
 
 ## Stop check status
